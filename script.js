@@ -58,4 +58,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
 });
+// Email Share Function
+function shareByEmail() {
+    const subject = 'Check out this CFAD research paper';
+    const body = `I found this interesting research paper on Carrier Feedback Acceleration Drive:\n\n${window.location.href}\n\nCheck it out!`;
+    const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Try to open email client
+    window.location.href = mailtoLink;
+    
+    // Fallback message
+    setTimeout(function() {
+        alert('If email client didn\'t open, please copy this link manually:\n\n' + window.location.href);
+    }, 500);
+    
+    return false;
+}
