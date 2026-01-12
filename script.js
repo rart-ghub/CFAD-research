@@ -88,4 +88,58 @@ document.addEventListener('DOMContentLoaded', function() {
     function showLinkAlert(url) {
         alert('Please copy this link manually:\n\n' + url + '\n\nYou can share it via email or messaging apps.');
     }
+    // Social Sharing Functions
+function shareOnTwitter() {
+    const text = "A New Paradigm in Newtonian Mechanics: Carrier Feedback Acceleration Drive (CFAD) - Continuous acceleration through geometric constraints";
+    const url = window.location.href;
+    const hashtags = "physics,innovation,mechanical,CFAD";
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}&hashtags=${hashtags}`;
+    window.open(twitterUrl, '_blank', 'width=600,height=400');
+}
+
+function shareOnLinkedIn() {
+    const url = window.location.href;
+    const title = "A New Paradigm in Newtonian Mechanics - CFAD Research";
+    const summary = "Carrier Feedback Acceleration Drive demonstrates continuous acceleration through geometric constraints.";
+    const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&summary=${encodeURIComponent(summary)}`;
+    window.open(linkedinUrl, '_blank', 'width=600,height=500');
+}
+
+function shareOnFacebook() {
+    const url = window.location.href;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+    window.open(facebookUrl, '_blank', 'width=600,height=500');
+}
+
+function shareOnReddit() {
+    const url = window.location.href;
+    const title = "A New Paradigm in Newtonian Mechanics: Carrier Feedback Acceleration Drive (CFAD)";
+    const redditUrl = `https://reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`;
+    window.open(redditUrl, '_blank', 'width=600,height=600');
+}
+
+// Optional: Add quick share for mobile
+function initQuickShare() {
+    if (navigator.share) {
+        // Add native share button for mobile
+        const shareBtn = document.createElement('button');
+        shareBtn.className = 'social-btn native-share';
+        shareBtn.innerHTML = '<i class="fas fa-mobile-alt"></i>';
+        shareBtn.title = 'Share via device';
+        shareBtn.onclick = function() {
+            navigator.share({
+                title: 'CFAD Research',
+                text: 'Check out this breakthrough in Newtonian mechanics',
+                url: window.location.href
+            });
+        };
+        document.querySelector('.social-share-buttons').appendChild(shareBtn);
+    }
+}
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initQuickShare();
 });
+});
+
