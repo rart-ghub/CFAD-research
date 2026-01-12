@@ -1,0 +1,377 @@
+﻿/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark: #1a1a2e;
+    --primary-blue: #16213e;
+    --accent-blue: #0f3460;
+    --accent-teal: #00a8a8;
+    --accent-red: #e94560;
+    --light-bg: #f8f9fa;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --text-gray: #6c757d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+    color: var(--text-light);
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero .subtitle {
+    font-size: 1.3rem;
+    max-width: 900px;
+    margin: 0 auto 25px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+.pdf-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    gap: 10px;
+}
+
+.btn-primary {
+    background-color: var(--accent-teal);
+    color: white;
+    border: 2px solid var(--accent-teal);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-teal);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 168, 168, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    transform: translateY(-3px);
+}
+
+/* SECTION STYLES */
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-dark);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--accent-blue);
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+/* CORE DISCOVERY SECTION */
+.discovery {
+    background-color: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: var(--light-bg);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--accent-teal);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* CROATIAN SECTION */
+.croatian {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.croatian h2, .croatian .section-subtitle {
+    color: white;
+}
+
+.croatian .section-subtitle {
+    opacity: 0.9;
+}
+
+.croatian .btn-primary {
+    background-color: var(--accent-red);
+    border-color: var(--accent-red);
+}
+
+.croatian .btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-red);
+}
+
+.note {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* OPEN SCIENCE SECTION */
+.open-science {
+    background-color: white;
+}
+
+.zenodo-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 5px solid var(--accent-teal);
+    padding: 30px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.zenodo-box h3 {
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.zenodo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.zenodo-link:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(15, 52, 96, 0.2);
+}
+
+.small-note {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.goals {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: var(--light-bg);
+    border-radius: 12px;
+}
+
+.goals h3 {
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+}
+
+.goals p {
+    margin-bottom: 15px;
+}
+
+/* DONATE SECTION */
+.donate-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-blue) 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 50px;
+}
+
+.donate-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.donate-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-donate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--accent-red);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-donate:hover {
+    background-color: #ff2e63;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(233, 69, 96, 0.3);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    color: var(--accent-teal);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--accent-teal);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+    }
+    
+    .pdf-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
