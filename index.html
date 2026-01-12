@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,9 +23,9 @@
                 <a href="Essay-CFAD-ENG.pdf" class="btn-secondary" download>
                     <i class="fas fa-download"></i> Download PDF
                 </a>
-<a href="#" class="btn-secondary" onclick="shareByEmail()">
-    <i class="fas fa-share-alt"></i> Share via Email
-</a>
+                <a href="#" class="btn-secondary" id="copy-link-btn">
+                    <i class="fas fa-share-alt"></i> Copy Link to Share
+                </a>
             </div>
         </div>
     </section>
@@ -143,19 +143,17 @@
                 <div class="footer-section">
                     <h4>GitHub Repository</h4>
                     <p>This website is open source. View the code on GitHub.</p>
-                    <!-- PLACEHOLDER GITHUB LINK -->
-                    <p><i class="fab fa-github"></i> <a href="#" id="github-placeholder">GitHub Repo</a></p>
+                    <!-- GITHUB REPO LINK - UPDATED -->
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/ranko3k8s/cfad-research" target="_blank">GitHub Repo</a></p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Carrier Feedback Acceleration Drive (CFAD) Research. All rights reserved.</p>
+                <p>&copy; <span id="current-year">2025</span> Carrier Feedback Acceleration Drive (CFAD) Research. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
