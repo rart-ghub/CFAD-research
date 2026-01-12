@@ -1,4 +1,4 @@
-﻿// Simple JavaScript for interactivity
+// Simple JavaScript for interactivity
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Update year in footer automatically
-    const yearSpan = document.getElementById('current-year');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
     }
     
     // Zenodo placeholder message
@@ -30,15 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         zenodoLink.addEventListener('click', function(e) {
             e.preventDefault();
             alert('The Zenodo link will be activated once the preprint is published. This is a placeholder for testing.');
-        });
-    }
-    
-    // GitHub placeholder message
-    const githubLink = document.getElementById('github-placeholder');
-    if (githubLink) {
-        githubLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('GitHub repository link will be added after initial setup.');
         });
     }
     
@@ -58,21 +49,43 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
+    
+    // Copy Link to Clipboard Function
+    const copyLinkBtn = document.getElementById('copy-link-btn');
+    if (copyLinkBtn) {
+        copyLinkBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const currentUrl = window.location.href;
+            
+            // Copy to clipboard
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(currentUrl)
+                    .then(() => {
+                        // Show success message
+                        const originalText = copyLinkBtn.innerHTML;
+                        copyLinkBtn.innerHTML = '<i class="fas fa-check"></i> Link Copied!';
+                        copyLinkBtn.style.backgroundColor = '#28a745';
+                        
+                        // Revert after 3 seconds
+                        setTimeout(() => {
+                            copyLinkBtn.innerHTML = originalText;
+                            copyLinkBtn.style.backgroundColor = '';
+                        }, 3000);
+                    })
+                    .catch(err => {
+                        // Fallback for older browsers
+                        showLinkAlert(currentUrl);
+                    });
+            } else {
+                // Fallback if clipboard API not available
+                showLinkAlert(currentUrl);
+            }
+        });
+    }
+    
+    // Fallback function to show link in alert
+    function showLinkAlert(url) {
+        alert('Please copy this link manually:\n\n' + url + '\n\nYou can share it via email or messaging apps.');
+    }
 });
-// Email Share Function
-function shareByEmail() {
-    const subject = 'Check out this CFAD research paper';
-    const body = `I found this interesting research paper on Carrier Feedback Acceleration Drive:\n\n${window.location.href}\n\nCheck it out!`;
-    const mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Try to open email client
-    window.location.href = mailtoLink;
-    
-    // Fallback message
-    setTimeout(function() {
-        alert('If email client didn\'t open, please copy this link manually:\n\n' + window.location.href);
-    }, 500);
-    
-    return false;
-}
