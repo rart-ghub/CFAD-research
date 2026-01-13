@@ -37,37 +37,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 3. SOCIAL SHARING FUNCTIONS (DEFINED GLOBALLY FOR BUTTON ONCLICK)
-    window.shareOnTwitter = function() {
-        console.log('Sharing on Twitter...');
-        const text = "A New Paradigm in Newtonian Mechanics: Carrier Feedback Acceleration Drive (CFAD)";
-        const url = window.location.href;
-        const hashtags = "physics,innovation,CFAD";
-        const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}&hashtags=${hashtags}`;
-        window.open(shareUrl, '_blank', 'width=600,height=400');
-    };
+// SOCIAL SHARE - SIMPLE VERSION (dodaj ovo u postojeći script.js)
+function shareOnTwitter() {
+    const url = 'https://rart-ghub.github.io/CFAD-research/';
+    const text = 'A New Paradigm in Newtonian Mechanics: Carrier Feedback Acceleration Drive (CFAD)';
+    window.open('https://twitter.com/share?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text), '_blank');
+}
 
-    window.shareOnLinkedIn = function() {
-        console.log('Sharing on LinkedIn...');
-        const url = window.location.href;
-        const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
-        window.open(shareUrl, '_blank', 'width=600,height=500');
-    };
+function shareOnLinkedIn() {
+    const url = 'https://rart-ghub.github.io/CFAD-research/';
+    window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url), '_blank');
+}
 
-    window.shareOnFacebook = function() {
-        console.log('Sharing on Facebook...');
-        const url = window.location.href;
-        const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-        window.open(shareUrl, '_blank', 'width=600,height=500');
-    };
+function shareOnFacebook() {
+    const url = 'https://rart-ghub.github.io/CFAD-research/';
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url), '_blank');
+}
 
-    window.shareOnReddit = function() {
-        console.log('Sharing on Reddit...');
-        const url = window.location.href;
-        const title = "A New Paradigm in Newtonian Mechanics: Carrier Feedback Acceleration Drive (CFAD)";
-        const shareUrl = `https://reddit.com/submit?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`;
-        window.open(shareUrl, '_blank', 'width=600,height=600');
-    };
+function shareOnReddit() {
+    const url = 'https://rart-ghub.github.io/CFAD-research/';
+    const title = 'A New Paradigm in Newtonian Mechanics: Carrier Feedback Acceleration Drive (CFAD)';
+    window.open('https://reddit.com/submit?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(title), '_blank');
+}
 
     // 4. NATIVE SHARE FOR MOBILE (BONUS)
     if (navigator.share) {
@@ -95,3 +86,4 @@ document.addEventListener('DOMContentLoaded', function() {
         yearElement.textContent = new Date().getFullYear();
     }
 });
+
