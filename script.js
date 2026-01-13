@@ -109,3 +109,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const socialButtons = document.querySelectorAll('.social-btn');
     console.log('Found social buttons:', socialButtons.length);
 });
+// Generate social image on the fly
+function generateSocialImage() {
+    const socialDiv = document.getElementById('social-image');
+    if (!socialDiv) return;
+    
+    // Convert div to image (simplified version)
+    console.log('Social image element ready for sharing');
+    
+    // This would normally use html2canvas library, but for now we use CSS
+    return 'https://rart-ghub.github.io/CFAD-research/#social-image';
+}
+
