@@ -82,9 +82,9 @@
         <i class="fas fa-download"></i> Download PDF (English)
     </a>
     <!-- PROMIJENJEN TREĆI GUMB -->
-<a href="mailto:?subject=CFAD%20Research&body=https%3A%2F%2Frart-ghub.github.io%2FCFAD-research%2F" class="btn-tertiary">
+    <a href="#" onclick="shareByEmail()" class="btn-tertiary">
     <i class="fas fa-envelope"></i> Share via Email
-</a>    
+    </a>
 </div>
 
     </section>
@@ -269,8 +269,17 @@
                 '&title=' + encodeURIComponent('CFAD Research: A New Paradigm in Newtonian Mechanics'), '_blank');
         }
     </script>
+    <script>
+function shareByEmail() {
+    var subject = "CFAD Research";
+    var body = "Check this: https://rart-ghub.github.io/CFAD-research/";
+    window.location.href = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    return false;
+}
+</script>
 </body>
 </html>
+
 
 
 
