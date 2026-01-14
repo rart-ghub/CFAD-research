@@ -75,25 +75,30 @@
             <!-- PDF BUTTONS - OVO JE BILO NEDOSTAJALO! -->
            <!-- ZAMIJENI OVAJ DIO U index.html (hero sekcija) -->
 <div class="pdf-buttons hero-buttons">
+    <!-- PRVI GUMB -->
     <a href="Essay-CFAD-ENG.pdf" class="btn-primary" target="_blank">
         <i class="fas fa-file-pdf"></i> Read the full theoretical essay (PDF)
     </a>
+    
+    <!-- DRUGI GUMB -->
     <a href="Essay-CFAD-ENG.pdf" class="btn-secondary" download>
         <i class="fas fa-download"></i> Download PDF (English)
-<!-- ZAMIJENI TREĆI GUMB SA OVIM -->
-<button onclick="copyToClipboard()" class="btn-tertiary">
-    <i class="fas fa-copy"></i> Copy Link
-</button>
+    </a>
+    
+    <!-- TREĆI GUMB - ISPRAVLJEN -->
+    <a href="#" onclick="copyToClipboard(); return false;" class="btn-tertiary">
+        <i class="fas fa-copy"></i> Copy Link
+    </a>
+</div>
 
 <script>
 function copyToClipboard() {
     var link = "https://rart-ghub.github.io/CFAD-research/";
     navigator.clipboard.writeText(link).then(function() {
-        alert("Link copied to clipboard!");
+        alert("✓ Link copied to clipboard!");
     });
 }
 </script>
-</div>
 
     </section>
 
@@ -287,6 +292,7 @@ function shareByEmail() {
 </script>
 </body>
 </html>
+
 
 
 
