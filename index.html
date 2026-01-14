@@ -80,11 +80,19 @@
     </a>
     <a href="Essay-CFAD-ENG.pdf" class="btn-secondary" download>
         <i class="fas fa-download"></i> Download PDF (English)
-    </a>
-    <!-- PROMIJENJEN TREĆI GUMB -->
-    <a href="#" onclick="shareByEmail()" class="btn-tertiary">
-    <i class="fas fa-envelope"></i> Share via Email
-    </a>
+<!-- ZAMIJENI TREĆI GUMB SA OVIM -->
+<button onclick="copyToClipboard()" class="btn-tertiary">
+    <i class="fas fa-copy"></i> Copy Link
+</button>
+
+<script>
+function copyToClipboard() {
+    var link = "https://rart-ghub.github.io/CFAD-research/";
+    navigator.clipboard.writeText(link).then(function() {
+        alert("Link copied to clipboard!");
+    });
+}
+</script>
 </div>
 
     </section>
@@ -279,6 +287,7 @@ function shareByEmail() {
 </script>
 </body>
 </html>
+
 
 
 
