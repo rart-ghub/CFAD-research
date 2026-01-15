@@ -6,8 +6,8 @@
     <title>A New Paradigm in Newtonian Mechanics - CFAD</title>
     
     <!-- ESSENTIAL SEO META TAGS -->
-    <meta name="description" content="Official presentation of the Carrier Feedback Acceleration Drive (CFAD) - a theoretical mechanical system demonstrating continuous acceleration from geometric constraints within Newtonian mechanics. Independent research paper available. Ranko Artuković.">
-    <meta name="keywords" content="Carrier Feedback Acceleration Drive, CFAD, mechanical feedback, tense assembly, dynamic inertial equilibrium, built-in tension, negative moment of inertia, kinematic trap, exotic mode, energy of dynamic response, self-excited state, Ranko Martin Artuković">
+    <meta name="description" content="Official presentation of the Carrier-Feedback Acceleration Drive (CFAD) - a theoretical mechanical system demonstrating continuous acceleration from geometric constraints within Newtonian mechanics. Independent research paper available. Ranko Artuković.">
+    <meta name="keywords" content="Carrier-Feedback Acceleration Drive, CFAD, mechanical feedback, tense assembly, dynamic inertial equilibrium, built-in tension, negative moment of inertia, kinematic trap, exotic mode, energy of dynamic response, self-excited state, Ranko Martin Artuković">
     <meta name="author" content="Ranko Martin Artuković">
     <meta name="copyright" content="Carrier Feedback Acceleration Drive (CFAD) Research">
     <meta name="robots" content="index, follow">
@@ -76,19 +76,21 @@
            <!-- ZAMIJENI OVAJ DIO U index.html (hero sekcija) -->
 <div class="pdf-buttons hero-buttons">
     <!-- PRVI GUMB -->
-    <a href="Essay-CFAD-ENG.pdf?v=2" class="btn-primary" target="_blank">
+<div class="pdf-buttons hero-buttons">
+    <!-- ENGLESKI PDF -->
+    <a href="Essay-CFAD-ENG.pdf?v=3" class="btn-primary" target="_blank">
         <i class="fas fa-file-pdf"></i> Read the full article (PDF)
     </a>
     
-    <!-- DRUGI GUMB -->
-    <a href="Essay-CFAD-ENG.pdf?v=2" class="btn-secondary" download>
+    <a href="Essay-CFAD-ENG.pdf?v=3" class="btn-secondary" download>
         <i class="fas fa-download"></i> Download PDF (English)
     </a>
     
-    <!-- TREĆI GUMB - ISPRAVLJEN -->
+    <!-- COPY LINK -->
     <a href="#" onclick="copyToClipboard(); return false;" class="btn-tertiary">
         <i class="fas fa-copy"></i> Copy Link
     </a>
+</div>
 </div>
 
 <script>
@@ -149,14 +151,14 @@ function copyToClipboard() {
             <p class="section-subtitle">Dostupno na hrvatskom jeziku</p>
             
             <!-- PDF BUTTONS FOR CROATIAN -->
-            <div class="pdf-buttons">
-                <a href="Essay-CFAD-HRV.pdf?v=2" class="btn-primary" target="_blank">
-                    <i class="fas fa-file-pdf"></i> Pročitajte cijeli članak (PDF)
-                </a>
-                <a href="Essay-CFAD-HRV.pdf?v=2" class="btn-secondary" download>
-                    <i class="fas fa-download"></i> Preuzmite članak (hrvatski)
-                </a>
-            </div>
+<div class="pdf-buttons">
+    <a href="Essay-CFAD-HRV.pdf?v=3" class="btn-primary" target="_blank">
+        <i class="fas fa-file-pdf"></i> Pročitajte cijeli članak (PDF)
+    </a>
+    <a href="Essay-CFAD-HRV.pdf?v=3" class="btn-secondary" download>
+        <i class="fas fa-download"></i> Preuzmite PDF (hrvatski)
+    </a>
+</div>
             
             <p class="note"><i class="fas fa-info-circle"></i>Za dijeljenje članka koristite gornje društvene gumbe.</p>
         </div>
@@ -171,20 +173,38 @@ function copyToClipboard() {
             <p>This work is published as an open-access preprint to establish priority and invite rigorous scientific scrutiny from the global community.</p>
             
             <!-- ZENODO LINK -->
-            <div class="zenodo-box">
-                <h3><i class="fas fa-external-link-alt"></i> Official Preprint & DOI</h3>
-                <p>The full paper is available on Zenodo for permanent citation and access:</p>
-                <a href="#" class="zenodo-link" id="zenodo-placeholder">
-                    <i class="fas fa-download"></i> Download from Zenodo.org
-                </a>
-                <p class="small-note">(DOI link will be activated after publication)</p>
-            </div>
-            
-            <div class="goals">
-                <h3>The Goal & Invitation</h3>
-                <p><strong>Independent verification</strong> through physical prototyping and peer analysis.</p>
-                <p><strong>Engineers, physicists, and research institutions</strong> are invited to examine the theory, critique the model, and collaborate on experimental validation.</p>
-            </div>
+<!-- ZENODO PREPRINT -->
+<div class="zenodo-box">
+    <h3><i class="fas fa-external-link-alt"></i> Official Preprint & DOI</h3>
+    <p>The full paper is permanently archived and citable on Zenodo under <strong>non-commercial academic license</strong>:</p>
+    
+    <!-- DOI LINK -->
+    <a href="https://doi.org/10.5281/zenodo.18260749" class="zenodo-link" target="_blank">
+        <i class="fas fa-link"></i> DOI: 10.5281/zenodo.18260749
+    </a>
+    
+    <!-- DIRECT DOWNLOAD (SA ?v=3 ZA CACHE BUST) -->
+    <a href="https://zenodo.org/records/18260749/files/Essay-CFAD-ENG.pdf?download=1&v=3" 
+       class="zenodo-link" 
+       style="margin-top: 10px;" 
+       target="_blank">
+        <i class="fas fa-download"></i> Download PDF (English)
+    </a>
+    
+    <!-- CROATIAN VERSION -->
+    <a href="https://zenodo.org/records/18260749/files/Essay-CFAD-HRV.pdf?download=1&v=3" 
+       class="zenodo-link" 
+       style="margin-top: 10px;" 
+       target="_blank">
+        <i class="fas fa-download"></i> Preuzmite PDF (hrvatski)
+    </a>
+    
+    <p class="small-note">
+        <i class="fas fa-balance-scale"></i> Non-commercial academic use only • 
+        <i class="fas fa-copyright"></i> Attribution required •
+        <i class="fas fa-lock"></i> Commercial use prohibited without permission
+    </p>
+</div>
             
             <!-- DONATE SECTION -->
             <div class="donate-section">
@@ -292,6 +312,7 @@ function shareByEmail() {
 </script>
 </body>
 </html>
+
 
 
 
