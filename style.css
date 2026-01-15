@@ -519,5 +519,66 @@ footer {
     text-align: center;
     vertical-align: middle;
 }
+/* ZENODO BOX STYLING */
+.zenodo-box {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.3);
+    border-left: 5px solid #ff9800;
+}
+
+.zenodo-link {
+    display: block;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 500;
+}
+
+.zenodo-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.zenodo-link i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.small-note {
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.small-note i {
+    margin: 0 5px;
+    color: #ff9800;
+}
+
+/* LICENSE BADGE */
+.license-badge {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
 
 
