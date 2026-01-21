@@ -635,7 +635,7 @@ footer {
 
 /* 1. Za "Understanding the CFAD Principle" */
 .hero h1 {
-    margin-bottom: 15px !important;
+    margin-bottom: 5px !important;
 }
 
 /* 2. Za "Open Access, Verification, and Future Work" */
@@ -648,6 +648,7 @@ footer {
 .open-science .section-subtitle + p {
     margin-top: 10px !important;
 }
+
 
 
 
