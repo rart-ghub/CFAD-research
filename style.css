@@ -41,7 +41,7 @@ body {
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: 800;
     line-height: 1.2;
 }
@@ -630,6 +630,23 @@ footer {
 .hero .container {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+}
+/* SMANJIVANJE PROSTORA ISPOD NASLOVA */
+
+/* 1. Za "Understanding the CFAD Principle" */
+.hero h1 {
+    margin-bottom: 15px !important;
+}
+
+/* 2. Za "Open Access, Verification, and Future Work" */
+.section-subtitle {
+    margin-bottom: 15px !important;
+}
+
+/* 3. Ako želite smanjiti i prostor ispod paragrafa nakon toga */
+.hero .subtitle + p,
+.open-science .section-subtitle + p {
+    margin-top: 10px !important;
 }
 
 
