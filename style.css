@@ -648,6 +648,58 @@ footer {
 .open-science .section-subtitle + p {
     margin-top: 10px !important;
 }
+/* CENTRIRANJE FOOTERA I BIJELI LINK */
+
+/* Centriranje cijelog footer teksta */
+.footer {
+    text-align: center !important;
+}
+
+/* Centriranje svih elemenata unutar footera */
+.footer * {
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+/* Za listu ili div elemente */
+.footer div,
+.footer p,
+.footer ul,
+.footer li {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+}
+
+/* Bijela boja za linkove u footeru */
+.footer a,
+.footer a:link,
+.footer a:visited {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Bijela boja za DOI link posebno */
+.footer a[href*="doi.org"],
+.footer a[href*="zenodo"] {
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* Hover efekat za linkove */
+.footer a:hover {
+    color: #cccccc !important;
+    text-decoration: underline !important;
+}
+
+/* Ako footer ima container unutra */
+.footer .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
 
 
 
