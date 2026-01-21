@@ -614,6 +614,23 @@ footer {
 #open-science a:not(.btn-tertiary) {
     color: white !important;
 }
+/* Smanjuje padding unutar hero sekcije */
+.hero {
+    padding-top: 20px !important;    /* Smanjite ovo prema potrebi */
+    padding-bottom: 20px !important; /* Smanjite ovo prema potrebi */
+}
+
+/* Ako želite smanjiti i margin izvan hero sekcije */
+.hero {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Ako unutar .hero postoji container s dodatnim paddingom */
+.hero .container {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
 
 
 
