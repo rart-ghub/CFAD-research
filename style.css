@@ -566,6 +566,54 @@ footer {
     margin: 20px 0 !important; /* Smanjeno s 40px */
     padding: 20px !important;
 }
+/* PODIGNI OPEN SCIENCE SEKCIJU */
+#open-science {
+    margin-top: -30px !important;  /* Podiže cijelu sekciju prema gore */
+    padding-top: 20px !important;
+}
+/* CENTRIRANJE I JEDNAKE VELIČINE GUMBIMA */
+.pdf-buttons {
+    justify-content: center !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+}
+
+.btn-primary, .btn-secondary, .btn-tertiary {
+    min-width: 220px !important;
+    max-width: 280px !important;
+    height: 56px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 5px !important;
+}
+/* BIJELI TEKST NA TAMNO PLAVOJ POZADINI */
+.zenodo-box,
+.zenodo-box h3,
+.zenodo-box p,
+.zenodo-box a,
+.zenodo-box .small-note {
+    color: white !important;
+}
+
+.zenodo-box a.zenodo-link {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.zenodo-box a.zenodo-link:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    color: white !important;
+}
+/* Ako je CIJELA sekcija plava, dodaj: */
+#open-science,
+#open-science h2,
+#open-science p,
+#open-science a:not(.btn-tertiary) {
+    color: white !important;
+}
 
 
 
