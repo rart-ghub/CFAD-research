@@ -640,14 +640,15 @@ footer {
 
 /* 2. Za "Open Access, Verification, and Future Work" */
 .section-subtitle {
-    margin-bottom: 15px !important;
+    margin-bottom: 20px !important;
 }
 
 /* 3. Ako želite smanjiti i prostor ispod paragrafa nakon toga */
 .hero .subtitle + p,
 .open-science .section-subtitle + p {
-    margin-top: 5px !important;
+    margin-top: 10px !important;
 }
+
 
 
 
