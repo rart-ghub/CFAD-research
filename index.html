@@ -74,6 +74,26 @@
         margin-bottom: 15px !important;
     }
 </style>
+    <style>
+    /* CENTRIRANJE I BIJELI LINKOVI U FOOTERU */
+    footer, .footer, #footer {
+        text-align: center !important;
+    }
+    
+    footer *, .footer *, #footer * {
+        text-align: center !important;
+    }
+    
+    footer a, .footer a, #footer a {
+        color: white !important;
+    }
+    
+    /* Posebno za DOI link */
+    a[href*="doi.org"], 
+    a[href*="zenodo"] {
+        color: white !important;
+    }
+</style>
    
 </head>
     
@@ -285,6 +305,7 @@ function shareByEmail() {
 </script>
 </body>
 </html>
+
 
 
 
