@@ -447,71 +447,6 @@ footer {
     }
 }
 /* DODAJ OVO U style.css */
-.btn-tertiary {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.3);
-}
-
-.btn-tertiary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(106, 17, 203, 0.4);
-    color: white;
-}
-/* DODAJ OVO NA KRAJ style.css */
-.btn-tertiary {
-    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
-    color: white;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(142, 45, 226, 0.3);
-}
-
-.btn-tertiary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(142, 45, 226, 0.4);
-    color: white;
-}
-.btn-tertiary {
-    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
-    color: white;
-    padding: 14px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(142, 45, 226, 0.3);
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 16px;
-}
-
-.btn-tertiary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(142, 45, 226, 0.4);
-    color: white;
-}
 
 /* OVO JE BITNO: svi gumbi isti display */
 .btn-primary, .btn-secondary, .btn-tertiary {
@@ -578,6 +513,58 @@ footer {
     font-size: 0.85em;
     font-weight: 600;
     margin-left: 10px;
+}
+/* TERCIJARNI GUMB (ljubičasti) - JEDINSTVENA DEFINICIJA */
+.btn-tertiary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(142, 45, 226, 0.3);
+    min-width: 220px; /* Da svi gumbi budu približno iste širine */
+    text-align: center;
+}
+
+.btn-tertiary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(142, 45, 226, 0.4);
+    color: white !important;
+}
+
+/* DA SVI GUMBI BUDU JEDNAKI */
+.btn-primary, .btn-secondary, .btn-tertiary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    height: 56px;
+}
+/* SMANJI PRAZNINE */
+.section {
+    padding: 40px 0 !important; /* Smanjeno s 80px */
+}
+
+/* POVEĆAJ KONTRAST TEKSTA */
+#open-science p, 
+#open-science .zenodo-box p {
+    color: #333 !important;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* POBOLJŠAJ ZENODO BOX */
+.zenodo-box {
+    margin: 20px 0 !important; /* Smanjeno s 40px */
+    padding: 20px !important;
 }
 
 
