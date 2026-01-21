@@ -646,8 +646,9 @@ footer {
 /* 3. Ako želite smanjiti i prostor ispod paragrafa nakon toga */
 .hero .subtitle + p,
 .open-science .section-subtitle + p {
-    margin-top: 10px !important;
+    margin-top: 5px !important;
 }
+
 
 
 
