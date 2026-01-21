@@ -49,6 +49,32 @@
   gtag('config', 'G-XXXXXXXXXX');
 </script>
     <meta name="google-site-verification" content="iOLEr5RsR9Na-bHKWzlhQsNy4tN7eoeaR4hO4PXG4VQ" />
+<style>
+    /* Smanjuje visinu hero sekcije */
+    .hero {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        min-height: auto !important; /* Ako ima fiksnu visinu */
+    }
+    
+    /* Ako ima unutarnje elemente koji dodaju prostor */
+    .hero .container {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    
+    /* Ako naslov ima preveliki margin */
+    .hero h1 {
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    
+    /* Ako podnaslov ima preveliki margin */
+    .hero .subtitle {
+        margin-bottom: 15px !important;
+    }
+</style>
+   
 </head>
     
 <body>
@@ -128,18 +154,18 @@ function copyToClipboard() {
     font-size: 1.1rem;
     line-height: 1.7;
 ">
-    <li style="margin-bottom: 15px;"><strong>Dynamic Inertial Equilibrium:</strong> A mechanical state in which the internal tension force cannot relax in the classical manner, requiring a dynamic response.</li>
-    <li style="margin-bottom: 15px;"><strong>Kinematic Feedback & Lock:</strong> The specific arrangement of gears, chains and supports creates a closed-loop constraint that permanently traps the internal tension force.</li>
-    <li style="margin-bottom: 15px;"><strong>Geometry and Built-in Tension as the Driver:</strong> The resulting acceleration depends on the system's geometry (radii ratio) and built-in tension magnitude, independent of external energy input.</li>
-    <li style="margin-bottom: 15px;"><strong>Negative Effective Moment of Inertia:</strong> A key condition for self-excitation, where one element (the carrier) behaves as a dynamic support within the system's equilibrium.</li>
-    <li style="margin-bottom: 5px;"><strong>Cyclic Operation for Practicality:</strong> The principle is designed for a feasible cycle of acceleration and regenerative braking, resulting in usable electrical or mechanical energy.</li>
+    <li "margin-bottom: 15px;"><strong>Dynamic Inertial Equilibrium:</strong> A mechanical state in which the internal tension force cannot relax in the classical manner, requiring a dynamic response.</li>
+    <li "margin-bottom: 15px;"><strong>Kinematic Feedback & Lock:</strong> The specific arrangement of gears, chains and supports creates a closed-loop constraint that permanently traps the internal tension force.</li>
+    <li "margin-bottom: 15px;"><strong>Geometry and Built-in Tension as the Driver:</strong> The resulting acceleration depends on the system's geometry (radii ratio) and built-in tension magnitude, independent of external energy input.</li>
+    <li "margin-bottom: 15px;"><strong>Negative Effective Moment of Inertia:</strong> A key condition for self-excitation, where one element (the carrier) behaves as a dynamic support within the system's equilibrium.</li>
+    <li "margin-bottom: 5px;"><strong>Cyclic Operation for Practicality:</strong> The principle is designed for a feasible cycle of acceleration and regenerative braking, resulting in usable electrical or mechanical energy.</li>
 </ul>
         </div>
     </section>
 
     <!-- CROATIAN VERSION SECTION -->
         <!-- OPEN SCIENCE SECTION -->
-    <section class="section open-science" style="margin-top: -50px;"> <!-- DODAO SAM OVO -->
+    <section class="section open-science" style="margin-top: -70px;"> <!-- DODAO SAM OVO -->
     <div class="container">
         <h2>OPEN SCIENCE & NEXT STEPS</h2>
         <p class="section-subtitle">Open Access, Verification, and Future Work</p>
@@ -259,6 +285,7 @@ function shareByEmail() {
 </script>
 </body>
 </html>
+
 
 
 
