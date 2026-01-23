@@ -1,4 +1,4 @@
-﻿/* RESET & BASE STYLES */
+/* RESET & BASE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -35,34 +35,52 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
     color: var(--text-light);
-    padding: 80px 0 100px;
+    padding: 40px 0 50px;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
+    font-size: 3.2rem;
+    margin-bottom: 5px;
     font-weight: 800;
     line-height: 1.2;
 }
 
 .hero .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     max-width: 900px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
 }
 
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    position: relative;
+}
+
+.author-signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.1em;
+    padding-right: 20px;
+    font-weight: 300;
+}
+
+/* PDF BUTTONS */
 .pdf-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-tertiary, .btn-zenodo {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -73,6 +91,9 @@ body {
     transition: all 0.3s ease;
     font-size: 1.1rem;
     gap: 10px;
+    min-width: 220px;
+    height: 56px;
+    text-align: center;
 }
 
 .btn-primary {
@@ -100,283 +121,34 @@ body {
     transform: translateY(-3px);
 }
 
-/* SECTION STYLES */
-.section {
-    padding: 80px 0;
-}
-
-.section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: var(--primary-dark);
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1.3rem;
-    color: var(--accent-blue);
-    margin-bottom: 50px;
-    font-weight: 500;
-}
-
-/* CORE DISCOVERY SECTION */
-.discovery {
-    background-color: white;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.feature-card {
-    background: var(--light-bg);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid var(--accent-teal);
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.feature-card h3 {
-    color: var(--primary-blue);
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-}
-
-/* CROATIAN SECTION */
-.croatian {
-    background-color: var(--primary-blue);
+.btn-tertiary {
+    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
     color: white;
-}
-
-.croatian h2, .croatian .section-subtitle {
-    color: white;
-}
-
-.croatian .section-subtitle {
-    opacity: 0.9;
-}
-
-.croatian .btn-primary {
-    background-color: var(--accent-red);
-    border-color: var(--accent-red);
-}
-
-.croatian .btn-primary:hover {
-    background-color: transparent;
-    color: var(--accent-red);
-}
-
-.note {
-    margin-top: 25px;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* OPEN SCIENCE SECTION */
-.open-science {
-    background-color: white;
-}
-
-.zenodo-box {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-left: 5px solid var(--accent-teal);
-    padding: 30px;
-    border-radius: 8px;
-    margin: 40px 0;
-}
-
-.zenodo-box h3 {
-    color: var(--primary-dark);
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.zenodo-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--primary-blue);
-    color: white;
-    padding: 15px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 15px;
-    transition: all 0.3s ease;
-}
-
-.zenodo-link:hover {
-    background-color: var(--accent-blue);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(15, 52, 96, 0.2);
-}
-
-.small-note {
-    font-size: 0.9rem;
-    color: var(--text-gray);
-    margin-top: 10px;
-    font-style: italic;
-}
-
-.goals {
-    margin: 50px 0;
-    padding: 30px;
-    background-color: var(--light-bg);
-    border-radius: 12px;
-}
-
-.goals h3 {
-    color: var(--primary-dark);
-    margin-bottom: 20px;
-}
-
-.goals p {
-    margin-bottom: 15px;
-}
-
-/* DONATE SECTION */
-.donate-section {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-blue) 100%);
-    color: white;
-    padding: 40px;
-    border-radius: 12px;
-    margin-top: 50px;
-}
-
-.donate-section h3 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.donate-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.btn-donate {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    background-color: var(--accent-red);
-    color: white;
-    padding: 18px 35px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
     border: none;
+    box-shadow: 0 4px 12px rgba(142, 45, 226, 0.3);
 }
 
-.btn-donate:hover {
-    background-color: #ff2e63;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(233, 69, 96, 0.3);
+.btn-tertiary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(142, 45, 226, 0.4);
 }
 
-/* FOOTER */
-footer {
-    background-color: var(--primary-dark);
+.btn-zenodo {
+    background-color: var(--accent-blue);
     color: white;
-    padding: 60px 0 30px;
+    border: 2px solid var(--accent-blue);
+    margin-top: 15px;
+    width: 100%;
+    max-width: 400px;
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
+.btn-zenodo:hover {
+    background-color: transparent;
+    color: var(--accent-blue);
+    transform: translateY(-3px);
 }
 
-.footer-section h4 {
-    color: var(--accent-teal);
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-}
-
-.footer-section p {
-    margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.footer-section a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-    color: var(--accent-teal);
-}
-
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 30px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero .subtitle {
-        font-size: 1.1rem;
-    }
-    
-    .section h2 {
-        font-size: 2rem;
-    }
-    
-    .pdf-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn-primary, .btn-secondary {
-        width: 100%;
-        max-width: 350px;
-    }
-    
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-}
-/* Social Share Buttons */
+/* SOCIAL SHARE BUTTONS */
 .social-share-buttons {
     display: flex;
     justify-content: center;
@@ -409,52 +181,36 @@ footer {
 .facebook { background-color: #4267B2; }
 .reddit { background-color: #FF5700; }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .social-share-buttons {
-        gap: 8px;
-    }
-    .social-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 1rem;
-    }
-}
-/* Stil za hero sekciju s autorom */
-.hero-content {
-    max-width: 900px;
-    margin: 0 auto 30px;
-    position: relative;
+/* SECTION STYLES */
+.section {
+    padding: 50px 0;
 }
 
-.author-signature {
-    text-align: right;
-    font-style: italic;
-    margin-top: 15px;
-    margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 1.1em;
-    padding-right: 20px;
-    font-weight: 300;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .author-signature {
-        text-align: center;
-        padding-right: 0;
-        font-size: 1em;
-    }
-}
-/* DODAJ OVO U style.css */
-
-/* OVO JE BITNO: svi gumbi isti display */
-.btn-primary, .btn-secondary, .btn-tertiary {
-    display: inline-block;
+.section h2 {
     text-align: center;
-    vertical-align: middle;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
 }
-/* ZENODO BOX STYLING */
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--accent-blue);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* CORE DISCOVERY SECTION */
+.discovery {
+    background-color: white;
+}
+
+/* OPEN SCIENCE SECTION */
+.open-science {
+    background-color: white;
+}
+
 .zenodo-box {
     background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
     color: white;
@@ -463,39 +219,48 @@ footer {
     margin: 30px 0;
     box-shadow: 0 8px 25px rgba(26, 35, 126, 0.3);
     border-left: 5px solid #ff9800;
+    text-align: center;
+}
+
+.zenodo-box h3 {
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .zenodo-link {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.15);
     color: white;
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 8px;
     text-decoration: none;
+    font-weight: 500;
     margin: 10px 0;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    font-weight: 500;
+    width: 100%;
+    max-width: 400px;
 }
 
 .zenodo-link:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-.zenodo-link i {
-    margin-right: 10px;
-    font-size: 1.1em;
 }
 
 .small-note {
-    font-size: 0.9em;
-    opacity: 0.9;
-    margin-top: 15px;
+    font-size: 0.95rem;
+    margin-top: 20px;
     padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .small-note i {
@@ -503,284 +268,124 @@ footer {
     color: #ff9800;
 }
 
-/* LICENSE BADGE */
-.license-badge {
-    display: inline-block;
-    background: #4CAF50;
+/* DONATE SECTION */
+.donate-section {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-blue) 100%);
     color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    font-weight: 600;
-    margin-left: 10px;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 40px;
+    text-align: center;
 }
-/* TERCIJARNI GUMB (ljubičasti) - JEDINSTVENA DEFINICIJA */
-.btn-tertiary {
-    display: inline-flex;
+
+.donate-section h3 {
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 14px 28px;
-    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
-    color: white !important;
+    margin-bottom: 20px;
+}
+
+.donate-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn-donate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--accent-red);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
     border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(142, 45, 226, 0.3);
-    min-width: 220px; /* Da svi gumbi budu približno iste širine */
+}
+
+.btn-donate:hover {
+    background-color: #ff2e63;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(233, 69, 96, 0.3);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.btn-tertiary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(142, 45, 226, 0.4);
-    color: white !important;
-}
-
-/* DA SVI GUMBI BUDU JEDNAKI */
-.btn-primary, .btn-secondary, .btn-tertiary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 220px;
-    height: 56px;
-}
-/* SMANJI PRAZNINE */
-.section {
-    padding: 40px 0 !important; /* Smanjeno s 80px */
-}
-
-/* POVEĆAJ KONTRAST TEKSTA */
-#open-science p, 
-#open-science .zenodo-box p {
-    color: #333 !important;
+footer p {
+    margin: 10px auto;
+    max-width: 900px;
     line-height: 1.6;
-    font-size: 1.1rem;
 }
 
-/* POBOLJŠAJ ZENODO BOX */
-.zenodo-box {
-    margin: 20px 0 !important; /* Smanjeno s 40px */
-    padding: 20px !important;
-}
-/* PODIGNI OPEN SCIENCE SEKCIJU */
-#open-science {
-    margin-top: -30px !important;  /* Podiže cijelu sekciju prema gore */
-    padding-top: 20px !important;
-}
-/* CENTRIRANJE I JEDNAKE VELIČINE GUMBIMA */
-.pdf-buttons {
-    justify-content: center !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 15px !important;
-}
-
-.btn-primary, .btn-secondary, .btn-tertiary {
-    min-width: 220px !important;
-    max-width: 280px !important;
-    height: 56px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 5px !important;
-}
-/* BIJELI TEKST NA TAMNO PLAVOJ POZADINI */
-.zenodo-box,
-.zenodo-box h3,
-.zenodo-box p,
-.zenodo-box a,
-.zenodo-box .small-note {
-    color: white !important;
-}
-
-.zenodo-box a.zenodo-link {
-    background: rgba(255, 255, 255, 0.15) !important;
-    color: white !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.zenodo-box a.zenodo-link:hover {
-    background: rgba(255, 255, 255, 0.25) !important;
-    color: white !important;
-}
-/* Ako je CIJELA sekcija plava, dodaj: */
-#open-science,
-#open-science h2,
-#open-science p,
-#open-science a:not(.btn-tertiary) {
-    color: white !important;
-}
-/* Smanjuje padding unutar hero sekcije */
-.hero {
-    padding-top: 20px !important;    /* Smanjite ovo prema potrebi */
-    padding-bottom: 20px !important; /* Smanjite ovo prema potrebi */
-}
-
-/* Ako želite smanjiti i margin izvan hero sekcije */
-.hero {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-/* Ako unutar .hero postoji container s dodatnim paddingom */
-.hero .container {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-}
-/* SMANJIVANJE PROSTORA ISPOD NASLOVA */
-
-/* 1. Za "Understanding the CFAD Principle" */
-.hero h1 {
-    margin-bottom: 5px !important;
-}
-
-/* 2. Za "Open Access, Verification, and Future Work" */
-.section-subtitle {
-    margin-bottom: 20px !important;
-}
-
-/* 3. Ako želite smanjiti i prostor ispod paragrafa nakon toga */
-.hero .subtitle + p,
-.open-science .section-subtitle + p {
-    margin-top: 10px !important;
-}
-/* CENTRIRANJE FOOTERA I BIJELI LINK */
-
-/* Centriranje cijelog footer teksta */
-.footer {
-    text-align: center !important;
-}
-
-/* Centriranje svih elemenata unutar footera */
-.footer * {
-    text-align: center !important;
-    justify-content: center !important;
-}
-
-/* Za listu ili div elemente */
-.footer div,
-.footer p,
-.footer ul,
-.footer li {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    flex-direction: column !important;
-}
-
-/* Bijela boja za linkove u footeru */
-.footer a,
-.footer a:link,
-.footer a:visited {
-    color: white !important;
-    text-decoration: none !important;
-}
-
-/* Bijela boja za DOI link posebno */
-.footer a[href*="doi.org"],
-.footer a[href*="zenodo"] {
-    color: white !important;
-    font-weight: bold !important;
-}
-
-/* Hover efekat za linkove */
-.footer a:hover {
-    color: #cccccc !important;
-    text-decoration: underline !important;
-}
-
-/* Ako footer ima container unutra */
-.footer .container {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-/* AI Q&A Sekcija */
-.ai-qa-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+footer a {
     color: white;
-    padding: 40px 0;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.ai-qa-section h3 {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-.ai-qa-section p {
-    max-width: 800px;
-    margin: 0 auto 25px;
-    font-size: 1.1rem;
-    opacity: 0.95;
-}
-
-/* Gumb za AI Q&A */
-.btn-ai-qa {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: white;
-    color: #764ba2;
-    padding: 14px 32px;
-    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-    margin: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.btn-ai-qa:hover {
-    background: #f8f9fa;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    border-color: white;
+footer a:hover {
+    color: #cccccc;
+    text-decoration: underline;
 }
 
-.btn-ai-qa i {
-    font-size: 1.2rem;
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+    }
+    
+    .pdf-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary, .btn-tertiary, .btn-zenodo {
+        width: 100%;
+        max-width: 350px;
+        min-width: auto;
+    }
+    
+    .author-signature {
+        text-align: center;
+        padding-right: 0;
+        font-size: 1em;
+    }
+    
+    .social-share-buttons {
+        gap: 8px;
+    }
+    
+    .social-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .zenodo-box, .donate-section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
 }
-
-/* Ako želite da se uklopi u postojeći hero */
-.btn-ai {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background: #00a67d;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.btn-ai:hover {
-    background: #008f6b;
-    transform: translateY(-2px);
-}
-
-.ai-qa-section .small-note {
-    font-size: 0.9rem;
-    margin-top: 20px;
-    opacity: 0.8;
-}
-
-
-
-
-
-
