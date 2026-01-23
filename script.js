@@ -2,7 +2,7 @@
 // CFAD RESEARCH - MAIN SCRIPT
 // ============================================
 
-// GLOBALNE FUNKCIJE (mora biti izvan DOMContentLoaded)
+// GLOBALNE FUNKCIJE
 function shareOnTwitter() {
     console.log('Sharing on Twitter...');
     const url = window.location.href;
@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const socialButtons = document.querySelectorAll('.social-btn');
     console.log('Found social buttons:', socialButtons.length);
 });
+
 // Generate social image on the fly
 function generateSocialImage() {
     const socialDiv = document.getElementById('social-image');
@@ -120,4 +121,3 @@ function generateSocialImage() {
     // This would normally use html2canvas library, but for now we use CSS
     return 'https://rart-ghub.github.io/CFAD-research/#social-image';
 }
-
