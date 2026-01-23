@@ -700,6 +700,84 @@ footer {
     align-items: center !important;
     justify-content: center !important;
 }
+/* AI Q&A Sekcija */
+.ai-qa-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ai-qa-section h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.ai-qa-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+/* Gumb za AI Q&A */
+.btn-ai-qa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    color: #764ba2;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-ai-qa:hover {
+    background: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-color: white;
+}
+
+.btn-ai-qa i {
+    font-size: 1.2rem;
+}
+
+/* Ako želite da se uklopi u postojeći hero */
+.btn-ai {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #00a67d;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-ai:hover {
+    background: #008f6b;
+    transform: translateY(-2px);
+}
+
+.ai-qa-section .small-note {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    opacity: 0.8;
+}
 
 
 
