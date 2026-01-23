@@ -41,60 +41,123 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NDRF78ML5Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDRF78ML5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="google-site-verification" content="iOLEr5RsR9Na-bHKWzlhQsNy4tN7eoeaR4hO4PXG4VQ" />
-<style>
-    /* Smanjuje visinu hero sekcije */
-    .hero {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-        min-height: auto !important; /* Ako ima fiksnu visinu */
-    }
     
-    /* Ako ima unutarnje elemente koji dodaju prostor */
-    .hero .container {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-    }
-    
-    /* Ako naslov ima preveliki margin */
-    .hero h1 {
-        margin-top: 0 !important;
-        margin-bottom: 10px !important;
-    }
-    
-    /* Ako podnaslov ima preveliki margin */
-    .hero .subtitle {
-        margin-bottom: 15px !important;
-    }
-</style>
     <style>
-    /* CENTRIRANJE I BIJELI LINKOVI U FOOTERU */
-    footer, .footer, #footer {
-        text-align: center !important;
-    }
-    
-    footer *, .footer *, #footer * {
-        text-align: center !important;
-    }
-    
-    footer a, .footer a, #footer a {
-        color: white !important;
-    }
-    
-    /* Posebno za DOI link */
-    a[href*="doi.org"], 
-    a[href*="zenodo"] {
-        color: white !important;
-    }
-</style>
-   
+        /* DODATNI STILOVI ZA SPECIFIČNE ISPRAVKE */
+        .discovery-list {
+            list-style-type: disc;
+            padding-left: 30px;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .discovery-list li {
+            margin-bottom: 15px;
+        }
+        
+        .discovery-list li:last-child {
+            margin-bottom: 5px;
+        }
+        
+        /* AI SEKCIJA - POPRAVLJENI STILOVI */
+        .ai-qa-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .ai-qa-section h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        
+        .ai-qa-section > .container > p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            font-size: 1.15rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        .btn-ai-qa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: white;
+            color: #764ba2;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-ai-qa:hover {
+            background: #f8f9fa;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            border-color: white;
+        }
+        
+        .ai-qa-section .small-note {
+            color: white !important;
+            font-size: 1rem !important;
+            line-height: 1.5 !important;
+            opacity: 0.9 !important;
+            max-width: 700px;
+            margin: 15px auto 0 !important;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* SMANJENA MARGINA CORE DISCOVERY SEKCIJE */
+        .section.discovery {
+            margin-top: 20px !important;
+            padding-top: 30px !important;
+        }
+        
+        /* FOOTER - CENTRIRAN I BIJELI LINKOVI */
+        footer {
+            text-align: center !important;
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 40px 20px !important;
+        }
+        
+        footer p {
+            text-align: center !important;
+            margin: 10px auto !important;
+            max-width: 900px;
+        }
+        
+        footer a {
+            color: white !important;
+            text-decoration: none !important;
+        }
+        
+        footer a:hover {
+            color: #cccccc !important;
+            text-decoration: underline !important;
+        }
+    </style>
 </head>
     
 <body>
@@ -127,54 +190,40 @@
                 </button>
             </div>
             
-            <!-- PDF BUTTONS - OVO JE BILO NEDOSTAJALO! -->
-           <!-- ZAMIJENI OVAJ DIO U index.html (hero sekcija) -->
-<div class="pdf-buttons hero-buttons">
-    <!-- PRVI GUMB -->
-<div class="pdf-buttons hero-buttons">
-    <!-- ENGLESKI PDF -->
-    <a href="Essay-CFAD-ENG.pdf?v=3" class="btn-primary" target="_blank">
-        <i class="fas fa-file-pdf"></i> Read the full article (PDF)
-    </a>
-    
-    <a href="Essay-CFAD-ENG.pdf?v=3" class="btn-secondary" download>
-        <i class="fas fa-download"></i> Download PDF (English)
-    </a>
-    
-    <!-- COPY LINK -->
-<a href="Essay-CFAD-HRV.pdf?v=3" class="btn-tertiary" target="_blank">
-    <i class="fas fa-book-reader"></i> Pročitaj članak (HR)
-</a>
-    
-    </div>
-</div>
-
-<script>
-function copyToClipboard() {
-    var link = "https://rart-ghub.github.io/CFAD-research/";
-    navigator.clipboard.writeText(link).then(function() {
-        alert("✓ Link copied to clipboard!");
-    });
-}
-</script>
-
+            <!-- PDF BUTTONS -->
+            <div class="pdf-buttons hero-buttons">
+                <!-- ENGLESKI PDF -->
+                <a href="Essay-CFAD-ENG.pdf?v=3" class="btn-primary" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Read the full article (PDF)
+                </a>
+                
+                <a href="Essay-CFAD-ENG.pdf?v=3" class="btn-secondary" download>
+                    <i class="fas fa-download"></i> Download PDF (English)
+                </a>
+                
+                <!-- HRVATSKI PDF -->
+                <a href="Essay-CFAD-HRV.pdf?v=3" class="btn-tertiary" target="_blank">
+                    <i class="fas fa-book-reader"></i> Pročitaj članak (HR)
+                </a>
+            </div>
+        </div>
     </section>
 
-    <!-- Nakon </section> koji zatvara hero sekciju, a prije CORE DISCOVERY -->
-<section class="ai-qa-section">
-    <div class="container">
-        <h3>🤖 Ask AI - Interactive Q&A</h3>
-        <p>Do you have questions about the CFAD principle? Ask for explanations, summaries or clarifications from the AI ​​assistant for all your questions.</p>
-        
-        <a href="https://www.chatpdf.com/share/eOoMxDVwY98ug0qKc7TOx" class="btn-ai-qa" target="_blank">
-            <i class="fas fa-robot"></i> Open in ChatPDF
-        </a>
-        
-        <p class="small-note">
-            <i class="fas fa-info-circle"></i> This links to a pre-shared PDF in ChatPDF. You can ask questions about this paper in your native language.
-        </p>
-    </div>
-</section>
+    <!-- AI Q&A SECTION -->
+    <section class="ai-qa-section">
+        <div class="container">
+            <h3>🤖 Ask AI - Interactive Q&A</h3>
+            <p>Do you have questions about the CFAD principle? Ask for explanations, summaries or clarifications from the AI assistant for all your questions.</p>
+            
+            <a href="https://www.chatpdf.com/share/eOoMxDVwY98ug0qKc7TOx" class="btn-ai-qa" target="_blank">
+                <i class="fas fa-robot"></i> Open in ChatPDF
+            </a>
+            
+            <p class="small-note">
+                <i class="fas fa-info-circle"></i> This links to a pre-shared PDF in ChatPDF. You can ask questions about this paper in your native language.
+            </p>
+        </div>
+    </section>
 
     <!-- CORE DISCOVERY SECTION -->
     <section class="section discovery">
@@ -182,80 +231,71 @@ function copyToClipboard() {
             <h2>THE CORE DISCOVERY</h2>
             <p class="section-subtitle">Understanding the CFAD Principle</p>
             
-<ul style="
-    list-style-type: disc;
-    padding-left: 30px;
-    margin: 30px auto;
-    max-width: 800px;
-    font-size: 1.1rem;
-    line-height: 1.7;
-">
-    <li "margin-bottom: 15px;"><strong>Dynamic Inertial Equilibrium:</strong> A mechanical state in which the internal tension force cannot relax in the classical manner, requiring a dynamic response.</li>
-    <li "margin-bottom: 15px;"><strong>Kinematic Feedback & Lock:</strong> The specific arrangement of gears, chains and supports creates a closed-loop constraint that permanently traps the internal tension force.</li>
-    <li "margin-bottom: 15px;"><strong>Geometry and Built-in Tension as the Driver:</strong> The resulting acceleration depends on the system's geometry (radii ratio) and built-in tension magnitude, independent of external energy input.</li>
-    <li "margin-bottom: 15px;"><strong>Negative Effective Moment of Inertia:</strong> A key condition for self-excitation, where one element (the carrier) behaves as a dynamic support within the system's equilibrium.</li>
-    <li "margin-bottom: 5px;"><strong>Cyclic Operation for Practicality:</strong> The principle is designed for a feasible cycle of acceleration and regenerative braking, resulting in usable electrical or mechanical energy.</li>
-</ul>
+            <ul class="discovery-list">
+                <li><strong>Dynamic Inertial Equilibrium:</strong> A mechanical state in which the internal tension force cannot relax in the classical manner, requiring a dynamic response.</li>
+                <li><strong>Kinematic Feedback & Lock:</strong> The specific arrangement of gears, chains and supports creates a closed-loop constraint that permanently traps the internal tension force.</li>
+                <li><strong>Geometry and Built-in Tension as the Driver:</strong> The resulting acceleration depends on the system's geometry (radii ratio) and built-in tension magnitude, independent of external energy input.</li>
+                <li><strong>Negative Effective Moment of Inertia:</strong> A key condition for self-excitation, where one element (the carrier) behaves as a dynamic support within the system's equilibrium.</li>
+                <li><strong>Cyclic Operation for Practicality:</strong> The principle is designed for a feasible cycle of acceleration and regenerative braking, resulting in usable electrical or mechanical energy.</li>
+            </ul>
         </div>
     </section>
 
-    <!-- CROATIAN VERSION SECTION -->
-        <!-- OPEN SCIENCE SECTION -->
-    <section class="section open-science" style="margin-top: -70px;"> <!-- DODAO SAM OVO -->
-    <div class="container">
-        <h2>OPEN SCIENCE & NEXT STEPS</h2>
-        <p class="section-subtitle">Open Access, Verification, and Future Work</p>
-        
-        <p>This work is published as an open-access preprint to establish priority and invite rigorous scientific scrutiny from the global community.</p>
-        
-        <!-- ZENODO PREPRINT -->
-        <div class="zenodo-box">
-            <h3><i class="fas fa-external-link-alt"></i> Official Preprint & DOI</h3>
-            <p>The full paper is permanently archived and citable on Zenodo under <strong>non-commercial academic license</strong>:</p>
+    <!-- OPEN SCIENCE SECTION -->
+    <section class="section open-science">
+        <div class="container">
+            <h2>OPEN SCIENCE & NEXT STEPS</h2>
+            <p class="section-subtitle">Open Access, Verification, and Future Work</p>
             
-            <!-- DOI LINK - SADA CENTRIRAN -->
-            <a href="https://doi.org/10.5281/zenodo.18260749" class="zenodo-link" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; margin-bottom: 15px;">
-                <i class="fas fa-link"></i> DOI: 10.5281/zenodo.18260749
-            </a>
+            <p>This work is published as an open-access preprint to establish priority and invite rigorous scientific scrutiny from the global community.</p>
             
-            <!-- ENGLESKI - ZENODO GUMB -->
-            <a href="https://doi.org/10.5281/zenodo.18260749" target="_blank" style="display: block; text-decoration: none; margin-bottom: 20px;">
-                <button style="padding: 12px 24px; font-size: 16px; border-radius: 8px; background-color: #0056b3; color: white; border: none; cursor: pointer; text-align: center; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                    <i class="fas fa-external-link-alt"></i> Read the Preprint on Zenodo (DOI)
-                </button>
-            </a>
-            
-            <!-- HRVATSKI - GITHUB (centrirana nota) -->
-            <p class="small-note" style="text-align: center;">
-                <i class="fas fa-balance-scale"></i> Non-commercial academic use only • 
-                <i class="fas fa-copyright"></i> Attribution required •
-                <i class="fas fa-lock"></i> Commercial use prohibited without permission
-            </p>
-        </div>
-        
-        <!-- DONATE SECTION - GUMB TAKOĐER CENTRIRAN -->
-        <div class="donate-section">
-            <h3><i class="fas fa-hand-heart"></i> Support Independent Research</h3>
-            <p>This represents decades of independent, foundational work. If this theory inspires you or you wish to support the pursuit of such fundamental research outside traditional frameworks, a voluntary contribution is deeply appreciated and will directly support future analysis, translations, and the long-term goal of building a verification prototype.</p>
-            
-            <div class="donate-buttons" style="display: flex; justify-content: center;">
-                <a href="https://revolut.me/ranko3k8s" class="btn-donate" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
-                    <i class="fas fa-donate"></i> Donate via Revolut
+            <!-- ZENODO PREPRINT -->
+            <div class="zenodo-box">
+                <h3><i class="fas fa-external-link-alt"></i> Official Preprint & DOI</h3>
+                <p>The full paper is permanently archived and citable on Zenodo under <strong>non-commercial academic license</strong>:</p>
+                
+                <!-- DOI LINK -->
+                <a href="https://doi.org/10.5281/zenodo.18260749" class="zenodo-link" target="_blank">
+                    <i class="fas fa-link"></i> DOI: 10.5281/zenodo.18260749
                 </a>
+                
+                <!-- ZENODO GUMB -->
+                <a href="https://doi.org/10.5281/zenodo.18260749" class="btn-zenodo" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Read the Preprint on Zenodo (DOI)
+                </a>
+                
+                <!-- LICENSE NOTE -->
+                <p class="small-note">
+                    <i class="fas fa-balance-scale"></i> Non-commercial academic use only • 
+                    <i class="fas fa-copyright"></i> Attribution required •
+                    <i class="fas fa-lock"></i> Commercial use prohibited without permission
+                </p>
+            </div>
+            
+            <!-- DONATE SECTION -->
+            <div class="donate-section">
+                <h3><i class="fas fa-hand-heart"></i> Support Independent Research</h3>
+                <p>This represents decades of independent, foundational work. If this theory inspires you or you wish to support the pursuit of such fundamental research outside traditional frameworks, a voluntary contribution is deeply appreciated and will directly support future analysis, translations, and the long-term goal of building a verification prototype.</p>
+                
+                <div class="donate-buttons">
+                    <a href="https://revolut.me/ranko3k8s" class="btn-donate" target="_blank">
+                        <i class="fas fa-donate"></i> Donate via Revolut
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-    <p>Contact: bokola1@proton.me</p>
-    <p>
-        <strong>Reference:</strong> Artuković, R. (2026). Energy from Form: How Geometry Powers a Self-Accelerating Mechanism. Zenodo. 
-        <a href="https://doi.org/10.5281/zenodo.18260749" target="_blank">https://doi.org/10.5281/zenodo.18260749</a>
-    </p>
-    <p><em>IP Note: The core principle is the subject of Croatian Utility Model Application No. <strong>UM20250073A</strong>, filing date: 9 December 2025</em></p>
-</footer>  
+        <p>Contact: bokola1@proton.me</p>
+        <p>
+            <strong>Reference:</strong> Artuković, R. (2026). Energy from Form: How Geometry Powers a Self-Accelerating Mechanism. Zenodo. 
+            <a href="https://doi.org/10.5281/zenodo.18260749" target="_blank">https://doi.org/10.5281/zenodo.18260749</a>
+        </p>
+        <p><em>IP Note: The core principle is the subject of Croatian Utility Model Application No. <strong>UM20250073A</strong>, filing date: 9 December 2025</em></p>
+    </footer>
+    
     <!-- HIDDEN SOCIAL IMAGE -->
     <div id="social-image" style="display: none; width: 1200px; height: 630px; position: absolute; top: -9999px; left: -9999px;">
         <div style="width: 1200px; height: 630px; background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%); color: white; font-family: 'Arial', sans-serif; padding: 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
@@ -311,36 +351,5 @@ function copyToClipboard() {
                 '&title=' + encodeURIComponent('CFAD Research: A New Paradigm in Newtonian Mechanics'), '_blank');
         }
     </script>
-    <script>
-function shareByEmail() {
-    var subject = "CFAD Research";
-    var body = "Check this: https://rart-ghub.github.io/CFAD-research/";
-    window.location.href = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    return false;
-}
-</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
