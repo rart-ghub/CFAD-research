@@ -396,9 +396,9 @@ footer a:hover {
 .preprint-section a:last-child,
 a.btn-preprint,
 a[class*="preprint"] {
-    background-color: #5865f2; !important;
+    background-color: #fff4e6; !important;
     color: white !important;
-    border: 2px solid #5865f2; !important;
+    border: 2px solid #fff4e6; !important;
     border-radius: 8px !important;
     padding: 14px 28px !important;
     font-weight: 600 !important;
@@ -419,11 +419,12 @@ a[class*="preprint"] {
 a.btn-preprint:hover,
 a[class*="preprint"]:hover {
     background-color: transparent !important;
-    color: #5865f2; !important;
+    color: #fff4e6; !important;
     transform: translateY(-3px) !important;
     box-shadow: 0 10px 20px rgba(0, 168, 168, 0.2) !important;
 }
 }
+
 
 
 
