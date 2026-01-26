@@ -390,5 +390,39 @@ footer a:hover {
     .section {
         padding: 40px 0;
     }
+/* POPRAVAK ZA PREPRINT GUMB - JAKI SELEKTORI */
+.preprint-section a[href*="preprint"],
+.preprint-section a[href*="arxiv"],
+.preprint-section a:last-child,
+a.btn-preprint,
+a[class*="preprint"] {
+    background-color: var(--accent-teal) !important;
+    color: white !important;
+    border: 2px solid var(--accent-teal) !important;
+    border-radius: 8px !important;
+    padding: 14px 28px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 220px !important;
+    height: 56px !important;
+    gap: 10px !important;
 }
+
+/* HOVER efekt */
+.preprint-section a[href*="preprint"]:hover,
+.preprint-section a[href*="arxiv"]:hover,
+.preprint-section a:last-child:hover,
+a.btn-preprint:hover,
+a[class*="preprint"]:hover {
+    background-color: transparent !important;
+    color: var(--accent-teal) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 20px rgba(0, 168, 168, 0.2) !important;
+}
+}
+
 
