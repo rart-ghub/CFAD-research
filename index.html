@@ -240,7 +240,7 @@
 
             <!-- JEZIČNI IZBORNIK -->
             <div class="language-selector-container">
-                <label for="language-select">🌐 Odaberi jezik:</label>
+                <label for="language-select">🌐 Language:</label>
                 <select id="language-select" class="language-select">
                     <!-- Opcije se dodaju dinamički iz JavaScripta -->
                 </select>
@@ -425,6 +425,19 @@
             { code: 'id', nativeName: 'Bahasa Indonesia' },
             { code: 'jw', nativeName: 'Basa Jawa' }
         ];
+        // Popuni padajući izbornik odmah (bez čekanja na i18next)
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('language-select');
+    if (select) {
+        languages.forEach(lang => {
+            const option = document.createElement('option');
+            option.value = lang.code;
+            option.textContent = lang.nativeName;
+            if (lang.code === 'en') option.selected = true;
+            select.appendChild(option);
+        });
+    }
+});
 
         // Inicijalizacija i18next - bez detektora, uvijek počinje s engleskim
         i18next
@@ -434,7 +447,7 @@
                 fallbackLng: 'en',
                 debug: false,
                 backend: {
-                    loadPath: '/locales/{{lng}}.json' // putanja do JSON datoteka
+                    loadPath: 'locales/{{lng}}.json' // putanja do JSON datoteka
                 }
             }, function(err, t) {
                 if (err) return console.error('i18next init error:', err);
