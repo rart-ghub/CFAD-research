@@ -1,0 +1,40 @@
+{
+  "hero_naslov": "Kinematically Trapped Force as an Energy Source",
+  "hero_opis": "A mechanical assembly that, once tightened, spontaneously begins to accelerate - without external input. This is not an illusion, but a consequence of ingeniously designed geometry and a kinematic trap. This discovery does not disprove Newton's laws; on the contrary, it confirms their validity in new mechanical systems. Welcome to a world where the tension force of the chain becomes kinematically trapped. The necessary balance of torques is achieved by constant angular acceleration - as the only possible physical response.",
+  "hero_autor": "— Ranko Artukovic",
+
+  "gumb_pregled": "Read the full article (PDF)",
+  "gumb_download": "Download PDF (English)",
+
+  "ai_naslov": "🤖 Ask AI - Interactive Q&A",
+  "ai_opis": "Do you have questions about the CFAD principle? Ask for explanations, summaries or clarifications from the AI assistant for all your questions.",
+  "ai_gumb": "Open in ChatPDF",
+  "ai_napomena": "This links to a pre-shared PDF in ChatPDF. You can ask questions about this paper in your native language.",
+
+  "discovery_naslov": "THE CORE DISCOVERY",
+  "discovery_1": "Kinematic Lock: The specific arrangement of gears and chains creates a closed loop in which the tension force becomes permanently trapped – there is no path for relaxation.",
+  "discovery_2": "Built-in Tension as the Driver: A constant force F0 cannot dissipate, so the only possible response of the system is – continuous acceleration. Its magnitude is determined by geometry, not by energy input.",
+  "discovery_3": "Negative Dynamic Contribution of the Carrier: The carrier behaves as an energy source: instead of decelerating the system, it accelerates in the opposite direction, delivering energy to the rest of the mechanism.",
+  "discovery_4": "Dynamic Inertial Equilibrium: The static reaction of the fixed sun gear is balanced solely by the inertial forces of the accelerating masses – an equilibrium that sustains itself through acceleration.",
+  "discovery_5": "Experimental Proof: In the mixed mode (simultaneous action of built-in tension and external torques), a measurable interaction term appears in the power balance – a direct confirmation of the phenomenon.",
+
+  "open_naslov": "OPEN SCIENCE & NEXT STEPS",
+  "open_podnaslov": "Open Access, Verification, and Future Work",
+  "open_opis": "This work is published as an open-access preprint to establish priority and invite rigorous scientific scrutiny from the global community.",
+  "open_preprint_naslov": "Official Preprint & DOI",
+  "open_preprint_opis": "The full paper is permanently archived and citable on Zenodo under non-commercial academic license:",
+  "open_doi_link": "DOI: 10.5281/zenodo.18643864",
+  "open_licenca": "Non-commercial academic use only • Attribution required • Commercial use prohibited without permission",
+
+  "donate_naslov": "Support Independent Research",
+  "donate_opis": "This represents decades of independent, foundational work. If this theory inspires you or you wish to support the pursuit of such fundamental research outside traditional frameworks, a voluntary contribution is deeply appreciated and will directly support future analysis, translations, and the long-term goal of building a verification prototype.",
+  "donate_gumb": "Donate via Revolut",
+
+  "footer_kontakt": "Contact: bokola1@proton.me",
+  "footer_referenca": "Reference: Artukovic, R. (2026). Dynamic Equilibrium in Mechanical Systems with a Kinematic Lock: Classical, Exotic and Mixed Mode. Zenodo. https://doi.org/10.5281/zenodo.18643864",
+  "footer_patent": "IP Note: The core principle is the subject of Croatian Utility Model Application No. UM20250073A, filing date: 9 December 2025",
+
+  "pdf_view": "https://drive.google.com/file/d/1Wj85OJ27AWAzM__m252Cs5E7DuwFC2iJ/view?usp=sharing",
+  "pdf_download": "https://drive.google.com/uc?export=download&id=1Wj85OJ27AWAzM__m252Cs5E7DuwFC2iJ"
+}
+
