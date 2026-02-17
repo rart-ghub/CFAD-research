@@ -392,38 +392,51 @@
     <!-- Glavni JavaScript za višejezičnost -->
     <script>
         // Lista jezika s kodovima i nativnim nazivima (prema vašim JSON datotekama)
-       const languages = [
-    { code: 'ar', nativeName: 'العربية' },
-    { code: 'bn', nativeName: 'বাংলা' },
-    { code: 'de', nativeName: 'Deutsch' },
+ const languages = [
+    // LATINIČNI JEZICI (europski i slični)
     { code: 'en', nativeName: 'English' },
-    { code: 'es', nativeName: 'Español' },
-    { code: 'fa', nativeName: 'فارسی' },
-    { code: 'fr', nativeName: 'Français' },
-    { code: 'gu', nativeName: 'ગુજરાતી' },
-    { code: 'he', nativeName: 'עברית' },
-    { code: 'hi', nativeName: 'हिन्दी' },
     { code: 'hr', nativeName: 'Hrvatski' },
-    { code: 'id', nativeName: 'Bahasa Indonesia' },
+    { code: 'de', nativeName: 'Deutsch' },
+    { code: 'fr', nativeName: 'Français' },
+    { code: 'es', nativeName: 'Español' },
     { code: 'it', nativeName: 'Italiano' },
-    { code: 'ja', nativeName: '日本語' },
-    { code: 'ko', nativeName: '한국어' },
-    { code: 'kv', nativeName: '??? (provjerite jezik)' },  // ← molim provjerite
-    { code: 'mr', nativeName: 'मराठी' },
-    { code: 'ms', nativeName: 'Bahasa Melayu' },
     { code: 'nl', nativeName: 'Nederlands' },
     { code: 'pl', nativeName: 'Polski' },
     { code: 'pt', nativeName: 'Português' },
+    { code: 'tl', nativeName: 'Filipino' },        // tagalog (latinični)
+    { code: 'vi', nativeName: 'Tiếng Việt' },      // vijetnamski (latinični)
+    { code: 'tr', nativeName: 'Türkçe' },          // turski (latinični)
+    
+    // ĆIRILIČNI JEZICI
     { code: 'ru', nativeName: 'Русский' },
-    { code: 'sw', nativeName: 'Kiswahili' },
+    { code: 'uk', nativeName: 'Українська' },
+    
+    // ARAPSKO PISMO
+    { code: 'ar', nativeName: 'العربية' },
+    { code: 'fa', nativeName: 'فارسی' },
+    { code: 'ur', nativeName: 'اردو' },
+    
+    // HEBREJSKI (posebno pismo)
+    { code: 'he', nativeName: 'עברית' },
+    
+    // INDIJSKA PISMA
+    { code: 'hi', nativeName: 'हिन्दी' },
+    { code: 'bn', nativeName: 'বাংলা' },
+    { code: 'gu', nativeName: 'ગુજરાતી' },
+    { code: 'mr', nativeName: 'मराठी' },
     { code: 'ta', nativeName: 'தமிழ்' },
     { code: 'te', nativeName: 'తెలుగు' },
-    { code: 'tl', nativeName: 'Filipino' },
-    { code: 'tr', nativeName: 'Türkçe' },
-    { code: 'uk', nativeName: 'Українська' },
-    { code: 'ur', nativeName: 'اردو' },
-    { code: 'vi', nativeName: 'Tiếng Việt' },
-    { code: 'zh-CN', nativeName: '中文 (简体)' }
+    
+    // ISTOČNOAZIJSKI JEZICI
+    { code: 'zh-CN', nativeName: '中文 (简体)' },
+    { code: 'ja', nativeName: '日本語' },
+    { code: 'ko', nativeName: '한국어' },
+    
+    // OSTALI (jugoistočna Azija, Afrika)
+    { code: 'id', nativeName: 'Bahasa Indonesia' },
+    { code: 'ms', nativeName: 'Bahasa Melayu' },
+    { code: 'jv', nativeName: 'Basa Jawa' },       // javanski (ako je datoteka jv.json)
+    { code: 'sw', nativeName: 'Kiswahili' }
 ];
         // Popuni padajući izbornik odmah (bez čekanja na i18next)
 document.addEventListener('DOMContentLoaded', function() {
