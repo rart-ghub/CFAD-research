@@ -392,39 +392,39 @@
     <!-- Glavni JavaScript za višejezičnost -->
     <script>
         // Lista jezika s kodovima i nativnim nazivima (prema vašim JSON datotekama)
-        const languages = [
-            { code: 'en', nativeName: 'English' },
-            { code: 'hr', nativeName: 'Hrvatski' },
-            { code: 'de', nativeName: 'Deutsch' },
-            { code: 'fr', nativeName: 'Français' },
-            { code: 'es', nativeName: 'Español' },
-            { code: 'it', nativeName: 'Italiano' },
-            { code: 'nl', nativeName: 'Nederlands' },
-            { code: 'pl', nativeName: 'Polski' },
-            { code: 'pt', nativeName: 'Português' },
-            { code: 'ru', nativeName: 'Русский' },
-            { code: 'tr', nativeName: 'Türkçe' },
-            { code: 'uk', nativeName: 'Українська' },
-            { code: 'ar', nativeName: 'العربية' },
-            { code: 'fa', nativeName: 'فارسی' },
-            { code: 'iw', nativeName: 'עברית' },
-            { code: 'hi', nativeName: 'हिन्दी' },
-            { code: 'bn', nativeName: 'বাংলা' },
-            { code: 'ur', nativeName: 'اردو' },
-            { code: 'gu', nativeName: 'ગુજરાતી' },
-            { code: 'mr', nativeName: 'मराठी' },
-            { code: 'ta', nativeName: 'தமிழ்' },
-            { code: 'te', nativeName: 'తెలుగు' },
-            { code: 'ko', nativeName: '한국어' },
-            { code: 'ja', nativeName: '日本語' },
-            { code: 'zh-CN', nativeName: '中文 (简体)' },
-            { code: 'vi', nativeName: 'Tiếng Việt' },
-            { code: 'fil', nativeName: 'Filipino' },
-            { code: 'sw', nativeName: 'Kiswahili' },
-            { code: 'ms', nativeName: 'Bahasa Melayu' },
-            { code: 'id', nativeName: 'Bahasa Indonesia' },
-            { code: 'jw', nativeName: 'Basa Jawa' }
-        ];
+       const languages = [
+    { code: 'ar', nativeName: 'العربية' },
+    { code: 'bn', nativeName: 'বাংলা' },
+    { code: 'de', nativeName: 'Deutsch' },
+    { code: 'en', nativeName: 'English' },
+    { code: 'es', nativeName: 'Español' },
+    { code: 'fa', nativeName: 'فارسی' },
+    { code: 'fr', nativeName: 'Français' },
+    { code: 'gu', nativeName: 'ગુજરાતી' },
+    { code: 'he', nativeName: 'עברית' },
+    { code: 'hi', nativeName: 'हिन्दी' },
+    { code: 'hr', nativeName: 'Hrvatski' },
+    { code: 'id', nativeName: 'Bahasa Indonesia' },
+    { code: 'it', nativeName: 'Italiano' },
+    { code: 'ja', nativeName: '日本語' },
+    { code: 'ko', nativeName: '한국어' },
+    { code: 'kv', nativeName: '??? (provjerite jezik)' },  // ← molim provjerite
+    { code: 'mr', nativeName: 'मराठी' },
+    { code: 'ms', nativeName: 'Bahasa Melayu' },
+    { code: 'nl', nativeName: 'Nederlands' },
+    { code: 'pl', nativeName: 'Polski' },
+    { code: 'pt', nativeName: 'Português' },
+    { code: 'ru', nativeName: 'Русский' },
+    { code: 'sw', nativeName: 'Kiswahili' },
+    { code: 'ta', nativeName: 'தமிழ்' },
+    { code: 'te', nativeName: 'తెలుగు' },
+    { code: 'tl', nativeName: 'Filipino' },
+    { code: 'tr', nativeName: 'Türkçe' },
+    { code: 'uk', nativeName: 'Українська' },
+    { code: 'ur', nativeName: 'اردو' },
+    { code: 'vi', nativeName: 'Tiếng Việt' },
+    { code: 'zh-CN', nativeName: '中文 (简体)' }
+];
         // Popuni padajući izbornik odmah (bez čekanja na i18next)
 document.addEventListener('DOMContentLoaded', function() {
     const select = document.getElementById('language-select');
