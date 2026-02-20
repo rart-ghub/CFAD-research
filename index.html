@@ -370,7 +370,7 @@
             </div>
         </div>
     </div>
-
+<script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
     <!-- i18next BIBLIOTEKE -->
     <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
@@ -436,23 +436,32 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
-        // Inicijalizacija i18next - bez detektora, uvijek počinje s engleskim
-        i18next
-            .use(i18nextHttpBackend)
-            .init({
-                lng: 'en',              // početni jezik je engleski
-                fallbackLng: 'en',
-                debug: false,
-                backend: {
-                    loadPath: 'locales/{{lng}}.json' // putanja do JSON datoteka
-                }
-            }, function(err, t) {
-                if (err) return console.error('i18next init error:', err);
-                // Nakon inicijalizacije popuni select i ažuriraj sadržaj
-                populateLanguageSelector();
-                updateContent();
-            });
+        // Inicijalizacija i18next - sada s detektorom i localStorageom
+i18next
+  .use(i18nextHttpBackend)
+  .use(i18nextBrowserLanguageDetector)  // Dodano: detektor jezika
+  .init({
+    fallbackLng: 'en',                   // Ako detekcija ne uspije, koristi engleski
+    debug: false,
+    backend: {
+      loadPath: 'locales/{{lng}}.json'
+    },
+    detection: {
+      // Redoslijed detekcije jezika
+      order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      
+      // Gdje pohraniti odabrani jezik (localStorage ili cookie)
+      caches: ['localStorage'],           // Pohrana u localStorage
+      
+      // Koliko dugo pamtiti izbor (opcionalno)
+      lookupLocalStorage: 'i18nextLng'
+    }
+  }, function(err, t) {
+    if (err) return console.error('i18next init error:', err);
+    // Nakon inicijalizacije popuni select i ažuriraj sadržaj
+    populateLanguageSelector();
+    updateContent();
+  });
 
         // Popuni padajući izbornik s jezicima
         function populateLanguageSelector() {
