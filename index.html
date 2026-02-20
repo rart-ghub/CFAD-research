@@ -380,50 +380,48 @@
     <script>
         // Lista jezika s kodovima i nativnim nazivima (prema vašim JSON datotekama)
  const languages = [
-    // LATINIČNI JEZICI (europski i slični)
-    { code: 'en', nativeName: 'English' },
-    { code: 'hr', nativeName: 'Hrvatski' },
-    { code: 'de', nativeName: 'Deutsch' },
-    { code: 'fr', nativeName: 'Français' },
-    { code: 'es', nativeName: 'Español' },
-    { code: 'it', nativeName: 'Italiano' },
-    { code: 'nl', nativeName: 'Nederlands' },
-    { code: 'pl', nativeName: 'Polski' },
-    { code: 'pt', nativeName: 'Português' },
-    { code: 'tl', nativeName: 'Filipino' },        // tagalog (latinični)
-    { code: 'vi', nativeName: 'Tiếng Việt' },      // vijetnamski (latinični)
-    { code: 'tr', nativeName: 'Türkçe' },          // turski (latinični)
-    
-    // ĆIRILIČNI JEZICI
-    { code: 'ru', nativeName: 'Русский' },
-    { code: 'uk', nativeName: 'Українська' },
-    
-    // ARAPSKO PISMO
-    { code: 'ar', nativeName: 'العربية' },
-    { code: 'fa', nativeName: 'فارسی' },
-    { code: 'ur', nativeName: 'اردو' },
-    
-    // HEBREJSKI (posebno pismo)
-    { code: 'he', nativeName: 'עברית' },
-    
-    // INDIJSKA PISMA
-    { code: 'hi', nativeName: 'हिन्दी' },
-    { code: 'bn', nativeName: 'বাংলা' },
-    { code: 'gu', nativeName: 'ગુજરાતી' },
-    { code: 'mr', nativeName: 'मराठी' },
-    { code: 'ta', nativeName: 'தமிழ்' },
-    { code: 'te', nativeName: 'తెలుగు' },
-    
-    // ISTOČNOAZIJSKI JEZICI
-    { code: 'zh-CN', nativeName: '中文 (简体)' },
-    { code: 'ja', nativeName: '日本語' },
-    { code: 'ko', nativeName: '한국어' },
-    
-    // OSTALI (jugoistočna Azija, Afrika)
-    { code: 'id', nativeName: 'Bahasa Indonesia' },
-    { code: 'ms', nativeName: 'Bahasa Melayu' },
-    { code: 'jv', nativeName: 'Basa Jawa' },       // javanski (ako je datoteka jv.json)
-    { code: 'sw', nativeName: 'Kiswahili' }
+    { code: 'ar', nativeName: 'ar - العربية' },
+    { code: 'bg', nativeName: 'bg - български' },
+    { code: 'bn', nativeName: 'bn - বাংলা' },
+    { code: 'cs', nativeName: 'cs - čeština' },
+    { code: 'da', nativeName: 'da - dansk' },
+    { code: 'de', nativeName: 'de - Deutsch' },
+    { code: 'el', nativeName: 'el - Ελληνικά' },
+    { code: 'en', nativeName: 'en - English' },
+    { code: 'es', nativeName: 'es - Español' },
+    { code: 'fa', nativeName: 'fa - فارسی' },
+    { code: 'fi', nativeName: 'fi - suomi' },
+    { code: 'fr', nativeName: 'fr - Français' },
+    { code: 'gu', nativeName: 'gu - ગુજરાતી' },
+    { code: 'he', nativeName: 'he - עברית' },
+    { code: 'hi', nativeName: 'hi - हिन्दी' },
+    { code: 'hr', nativeName: 'hr - Hrvatski' },
+    { code: 'id', nativeName: 'id - Bahasa Indonesia' },
+    { code: 'it', nativeName: 'it - Italiano' },
+    { code: 'ja', nativeName: 'ja - 日本語' },
+    { code: 'jv', nativeName: 'jv - Basa Jawa' },
+    { code: 'ko', nativeName: 'ko - 한국어' },
+    { code: 'mr', nativeName: 'mr - मराठी' },
+    { code: 'ms', nativeName: 'ms - Bahasa Melayu' },
+    { code: 'nl', nativeName: 'nl - Nederlands' },
+    { code: 'no', nativeName: 'no - norsk' },
+    { code: 'pl', nativeName: 'pl - Polski' },
+    { code: 'pt', nativeName: 'pt - Português' },
+    { code: 'ro', nativeName: 'ro - română' },
+    { code: 'ru', nativeName: 'ru - Русский' },
+    { code: 'sk', nativeName: 'sk - slovenčina' },
+    { code: 'sl', nativeName: 'sl - slovenščina' },
+    { code: 'sr', nativeName: 'sr - српски' },
+    { code: 'sv', nativeName: 'sv - svenska' },
+    { code: 'sw', nativeName: 'sw - Kiswahili' },
+    { code: 'ta', nativeName: 'ta - தமிழ்' },
+    { code: 'te', nativeName: 'te - తెలుగు' },
+    { code: 'tl', nativeName: 'tl - Filipino' },
+    { code: 'tr', nativeName: 'tr - Türkçe' },
+    { code: 'uk', nativeName: 'uk - Українська' },
+    { code: 'ur', nativeName: 'ur - اردو' },
+    { code: 'vi', nativeName: 'vi - Tiếng Việt' },
+    { code: 'zh', nativeName: 'zh - 中文 (简体)' }
 ];
         // Popuni padajući izbornik odmah (bez čekanja na i18next)
 document.addEventListener('DOMContentLoaded', function() {
