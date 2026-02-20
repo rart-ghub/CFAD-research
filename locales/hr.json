@@ -1,6 +1,6 @@
 {
   "hero_naslov": "Kinematički zarobljena sila kao izvor energije",
-  "hero_opis": "Mehanički sklop koji se, nakon što je jednom zategnut, spontano počinje ubrzavati - bez vanjskog unosa. To nije iluzija, već posljedica genijalno osmišljene geometrije i kinematičke zamke. Ovo otkriće ne pobija Newtonove zakone; naprotiv, potvrđuje njihovu valjanost u novim mehaničkim sustavima. Dobrodošli u svijet u kojem sila napetosti lanca postaje kinematički zarobljena. Nužna ravnoteža okretnih momenta postiže se stalnim kutnim ubrzanjem – kao jedino mogućim fizičkim odgovorom.",
+  "hero_opis": "Mehanički sklop koji se, nakon što je jednom zategnut, spontano počinje ubrzavati - bez vanjskog energetskog unosa. To nije iluzija, već posljedica genijalno osmišljene geometrije i kinematičke zamke. Ovo otkriće ne pobija Newtonove zakone; naprotiv, potvrđuje njihovu valjanost u novim mehaničkim sustavima. Dobrodošli u svijet u kojem sila napetosti lanca postaje kinematički zarobljena. Nužna ravnoteža okretnih momenta postiže se stalnim kutnim ubrzanjem – kao jedino mogućim fizičkim odgovorom.",
   "hero_autor": "— Ranko Martin Artuković",
   "gumb_pregled": "Pročitajte cijeli članak (PDF)",
   "gumb_download": "Preuzmi PDF (engleski)",
@@ -8,9 +8,9 @@
   "ai_opis": "Imate li pitanja o CFAD načelu? Za sva svoja pitanja zatražite objašnjenja, sažetke ili pojašnjenja od AI asistenta.",
   "ai_gumb": "Otvori u ChatPDF",
   "ai_napomena": "Ovo povezuje na unaprijed dijeljeni PDF u ChatPDF-u. Pitanja o ovom mehanizmu slobodno postavljajte na svojem maternjem jeziku.",
-  "discovery_naslov": "OSNOVNO OTKRIĆE",
+  "discovery_naslov": "SUŠTINA OTKRIĆA",
   "discovery_1": "<strong>Kinematička blokada:</strong> Specifičan raspored zupčanika i lanaca stvara zatvorenu kinematičku petlju u kojoj sila napetosti postaje trajno zarobljena - nema puta ni načina za opuštanje lanca.",
-  "discovery_2": "<strong>Ugrađena napetost kao pokretač:</strong> Konstantna sila F0 ne može nestati, pa je jedini mogući odgovor sustava – kontinuirano ubrzanje. Njegovu veličinu određuje geometrija, a ne unos energije.",
+  "discovery_2": "<strong>Ugrađena sila napetosti kao pokretač:</strong> Konstantna sila F0 ne može nestati, pa je jedini mogući odgovor sustava – kontinuirano ubrzanje. Njegovu veličinu određuje geometrija, a ne unos energije.",
   "discovery_3": "<strong>Negativan dinamički doprinos nosača C:</strong> nosač se ponaša kao izvor energije: umjesto da usporava sustav, on ubrzava u suprotnom smjeru, isporučujući energiju ostatku mehanizma.",
   "discovery_4": "<strong>Dinamička inercijalna ravnoteža:</strong> statička reakcija fiksnog sunčanog zupčanika uravnotežena je isključivo inercijskim silama ubrzanih masa – ravnoteža koja se sama održava kroz ubrzanje.",
   "discovery_5": "<strong>Eksperimentalni dokaz:</strong> U mješovitom načinu rada (istodobno djelovanje ugrađene napetosti i vanjskih okretnih momenta), u ravnoteži snaga pojavljuje se mjerljivi međudjelovni član – izravna potvrda fenomena.",
@@ -29,4 +29,5 @@
   "footer_patent": "IP Napomena: Osnovno načelo je predmet hrvatske prijave Uporabnog modela br. UM20250073A, datum podnošenja: 9. prosinca 2025.",
   "pdf_view": "https://drive.google.com/file/d/18jQzntupqMVvE5iP0k_vBw5cQuilLF4X/preview",
   "pdf_download": "https://drive.google.com/uc?export=download&id=18jQzntupqMVvE5iP0k_vBw5cQuilLF4X"
+
 }
